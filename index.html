@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Project Altair</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+  <body>
+   
+
+
+  </body>
+</html>
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Project Altair</a>
+        <ul>
+            <li><a href="#"class="active">Home</a></li>
+            <li><a href="#container">Drones</a></li>
+  
+            <li><a href="#about-wrapper">About the Project</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="/pictures/stars.png"id="stars">
+        <img src="/pictures/moon.png"id="moon">
+        <img src="/pictures/mountains_behind.png"id="mountains_behind">
+        <h2 id="text">Project Altair</h2>
+        <a href="#sec"id="btn">Explore</a>
+        <img src="/pictures/mountains_front.png"id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>What are drones?</h2>
+        <p>Unmanned aerial vehicle: Outer space. Hurricane disaster zones. Antarctica. Your front door. One of these destinations is a little less extreme than the others, but that’s the point for drones. Drones, sometimes referred to as “Unmanned Aerial Vehicles” (UAVs) are meant to carry out tasks that range from the mundane to the ultra-dangerous. These robot-like vehicles can be found assisting the rescue of avalanche victims in the Swiss Alps, at your front doorstep dropping off your groceries and almost everywhere in between.
+            Originally developed for the military and aerospace industries, drones have found their way into the mainstream because of the enhanced levels of safety and efficiency they bring. These robotic UAVs operate without a pilot on board and with different levels of autonomy. A drone’s autonomy level can range from remotely piloted (a human controls its movements) to advanced autonomy, which means that it relies on a system of sensors and LIDAR detectors to calculate its movement.
+            ifferent drones are capable of traveling varying heights and distances.<br><br>
+             Very close-range drones usually have the ability to travel up to three miles and are mostly used by hobbyists. Close-range UAVs have a range of around 30 miles. Short-range drones travel up to 90 miles and are used primarily for espionage and intelligence gathering. Mid-range UAVs have a 400-mile distance range and could be used for intelligence gathering, scientific studies and meteorological research. The longest-range drones are called
+            “endurance” UAVs and have the ability to go beyond the 400-mile range and up to 3,000 feet in the air.
+            Because drones can be controlled remotely and can be flown at varying distances and heights, they make perfect candidates to take on some of the toughest jobs in the world. They can be found assisting in a search for survivors after a hurricane, giving law enforcement and military an eye-in-the-sky during terrorist situations and advancing scientific research in some of the most extreme climates on the planet. Drones have even made their
+             way into our homes and serve as entertainment for hobbyists and a vital tool for photographers.<br><br>
+             Drones are commonly referred to as Unmanned Aerial Vehicles (UAV)whereas the entire system 
+             that allows a drone to function
+              is a UAS (Unmanned Aerial System.)
+               The UAV is the heart of the UAS and possesses fixed
+                wings or either a single or multi-rotary build for flight. Lighter-than-air UAVs, such as
+                 blimps and balloons, and small “Flapping Wing” UAVs also exist.
+                 Ground Control Station (GCS)
+                 Ground Control Stations are the central control 
+                 unit that allows a UAV to fly and a UAS to operate.
+                  These stations can be as large as a desk with multiple
+                   views to as small as a handheld controller or even an app
+                   . The GCS can be user controlled or operated via satellites and is capable of controlling flight, controlling payload 
+                   sensors, providing status readouts, mission planning and tethering the data link system.<br><br>
+                   Payloads
+                   Drones, UAVs specifically, come in a variety of sizes and are capable of carrying payloads of equally variable sized payloads. From life saving medication to packages and more, drones provide an efficient method of delivery but must be built to handle the job at hand. Many drones are capable of rapid flight across oceans while others may be restricted to just a few thousand feet. Some drones may be capable of carrying hundreds of pounds while others can only manage under ten.
+                    It is crucial for operators to choose the right drone to help them complete the job at hand.</p>
+    </div>
+    <script>
+        let stars=document.getElementById('stars')
+        let moon=document.getElementById('moon')
+        let mountains_behind=document.getElementById('mountains_behind')
+        let btn=document.getElementById('btn')
+        let mountains_front=document.getElementById('mountains_front')
+        let text = document.getElementById('text');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value*0.30+ 'px'; 
+            moon.style.top = value*1.05+ 'px'; 
+            mountains_behind.style.top = value*0.25+ 'px'; 
+            mountains_front.style.top = value*0+ 'px';
+            text.style.marginRight = value *4+ 'px';
+            text.style.marginTop = value *1.5+ 'px';
+            btn.style.marginTop = value *1.5+ 'px';
+            heard.style.top = value*0.5+'px';
+             
+        })
+    </script>
+    <div class="container" id="container">
+        <h2>Top 3 drones in the world</h2>
+        <div class="card">
+            <div class ="circle">
+                <h2>01</h2>
+            </div>
+            <div class="content">
+                <p>XQ-58 VALKYRIE is the next logical step in the evolution of UAVs designed...</p>
+                <a href="https://autojournalism.com/top-10-best-military-drones-in-the-world/" target="blank">Read more</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class ="circle">
+                <h2>02</h2>
+            </div>
+            <div class="content">
+                <p>At number 2 is  DASSAULT NEURON, the DASSAULT NEURON is an experiments...</p>
+                <a href="https://autojournalism.com/top-10-best-military-drones-in-the-world/" target="blank">Read more</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class ="circle">
+                <h2>03</h2>
+            </div>
+            <div class="content">
+                <p>Number three is Sukhoi or OKHOTNIK B Sukhoi s70, OKHOTNIKy...</p>
+                <a href="https://autojournalism.com/top-10-best-military-drones-in-the-world/" target="blank">Read more</a>
+            </div>
+        </div>
+        
+    </div>
+    <div class = "about-wrapper" id="about-wrapper">
+        <div class = "about-left">
+          <div class = "about-left-content">
+            <div>
+              <div class = "shadow">
+                <div class = "about-img">
+                  <img src = "/pictures/aesthetic-desktop-nawpic-3.png" alt = "about image">
+                </div>
+              </div>
+  
+              <h2>Web<br>Coders</h2>
+              <h3>WBC</h3>
+            </div>
+  
+            <ul class = "icons">
+              <li><i class = "fab fa-facebook-f"></i></li>
+              <li><i class = "fab fa-twitter"></i></li>
+              <li><i class = "fab fa-linkedin"></i></li>
+              <li><i class = "fab fa-instagram"></i></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class = "about-right">
+          <h1>hi<span>!</span></h1>
+          <h2>About The Project</h2>
+          <div class = "about-btns">
+            <button type = "button" class = "btn btn-pink">Topic</button>
+            <button type = "button" class = "btn btn-white">Web Coders</button>
+          </div>
+  
+          <div class = "about-para">
+            <p>This Project is a submission for the Event "Web Coders" which is a responsive and animated website made using javascript,html and css.Submitted by school code 5931f43b.</p>
+          </div>
+        </div>
+      </div>
+  
+    
+</body>
+</html>
